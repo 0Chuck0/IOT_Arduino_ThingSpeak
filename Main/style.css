@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+  }
+  
+  .container{
+    width: 80%;
+    text-align: center;
+    /* display: flexbox; */
+    margin: auto;
+  }
+  .container2{
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 2rem;
+  }
+  
+  .container2_w{
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 0px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 2rem;
+  }
+  
+  
+  .widget{
+    /* display: flex; */
+    margin:auto;
+  }
+  
+  .widget iframe{
+    height: 250px;
+  }
+  h1 {
+    color: #333;
+  }
+  
+  #data-display {
+    margin-top: 20px;
+  }
+  
+  .data-field {
+    font-size: 24px;
+    color: #2c3e50;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .data-field label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .data-field span {
+    margin: 0 5px;
+  }
+  
+  .styled-button {
+    background-color: #4CAF50; /* Green background */
+    color: white;              /* White text */
+    border: none;              /* No border */
+    padding: 10px 20px;       /* Padding for top/bottom and left/right */
+    text-align: center;        /* Centered text */
+    text-decoration: none;      /* No underline */
+    display: inline-block;      /* Inline-block for width/height */
+    font-size: 16px;           /* Larger text size */
+    margin: 2rem   2px;          /* Margins for spacing */
+    cursor: pointer;           /* Pointer cursor on hover */
+    border-radius: 5px;       /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+  }
+  
+  .styled-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05);    /* Slightly enlarge on hover */
+  }
+  
+  .styled-button:active {
+    transform: scale(0.95);     /* Slightly shrink on click */
+  }
+  
+  @media (max-width: 400px) {
+    .widget {
+        display: none; /* Hides the widget */
+    }
+    .container2_w{
+      padding-bottom: 20px;
+    }
+  }
+  

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arduino Project Data</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1>Arduino Project Data</h1>
+      <p>Real-time sensor data from ThingSpeak:</p>
+    </div>
+
+    <div class="container2">
+        <div class="data-field">
+          <label>Humidity:</label>
+          <span id="humidityValue">Loading...</span><span>%</span>
+        </div>
+    </div>
+
+    <div class="container2_w">
+      <div class="data-field">
+        <label>Temperature:</label>
+        <span id="temperatureValue">Loading...</span><span>°C</span>
+      </div>
+      
+      <div class="widget">
+        <iframe class="iframe_widget"
+          width="450px"
+          height="260px"
+          src="https://thingspeak.mathworks.com/channels/2717430/widgets/956675"
+          frameborder="0"
+          allowfullscreen>
+        </iframe> 
+      </div>
+    </div>
+
+    <button id="charts" class="styled-button"onclick="window.location.href='../Analytics'">
+      Detailed Analytics
+    </button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
