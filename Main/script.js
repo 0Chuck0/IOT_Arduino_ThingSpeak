@@ -1,6 +1,6 @@
-const channelID = '2717430';
-const readAPIKey = 'TWYWVWMKXN6KKVYB';
-const writeAPIKey = '5KSKJ52T5SAV89DU';
+const channelID = 'channelID';
+const readAPIKey = 'readAPIKey';
+const writeAPIKey = 'writeApiKey';
 
 async function readLED() {
   try {
