@@ -91,7 +91,33 @@ body {
   .styled-button:active {
     transform: scale(0.95);     /* Slightly shrink on click */
   }
-  
+  .styled-button1 {
+    background-color: #4CAF50; /* Green background */
+    color: white;              /* White text */
+    border: none;              /* No border */
+    padding: 10px 20px;       /* Padding for top/bottom and left/right */
+    text-align: center;        /* Centered text */
+    text-decoration: none;      /* No underline */
+    display: inline-block;      /* Inline-block for width/height */
+    font-size: 16px;           /* Larger text size */
+    margin: 2rem   2px;          /* Margins for spacing */
+    cursor: pointer;           /* Pointer cursor on hover */
+    border-radius: 5px;       /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+  }
+
+  .styled-button1:active {
+    transform: scale(0.95);     /* Slightly shrink on click */
+  }
+  .turn_on{
+    background-color: #45a049;
+    color: white;
+  }
+
+  .turn_off{
+    background-color: #ff0000;
+    color: White;
+  }
   @media (max-width: 400px) {
     .widget {
         display: none; /* Hides the widget */

@@ -16,10 +16,10 @@
     </div>
 
     <div class="container2">
-        <div class="data-field">
-          <label>Humidity:</label>
-          <span id="humidityValue">Loading...</span><span>%</span>
-        </div>
+      <div class="data-field">
+        <label>Humidity:</label>
+        <span id="humidityValue">Loading...</span><span>%</span>
+      </div>
     </div>
 
     <div class="container2_w">
@@ -27,22 +27,32 @@
         <label>Temperature:</label>
         <span id="temperatureValue">Loading...</span><span>°C</span>
       </div>
-      
+
       <div class="widget">
-        <iframe class="iframe_widget"
-          width="450px"
-          height="260px"
-          src="https://thingspeak.mathworks.com/channels/2717430/widgets/956675"
-          frameborder="0"
-          allowfullscreen>
-        </iframe> 
+        <iframe class="iframe_widget" width="450px" height="260px"
+          src="https://thingspeak.mathworks.com/channels/2717430/widgets/956675" frameborder="0" allowfullscreen>
+        </iframe>
       </div>
     </div>
 
-    <button id="charts" class="styled-button"onclick="window.location.href='../Analytics'">
+    <button id="charts" class="styled-button" onclick="window.location.href='../Analytics'">
       Detailed Analytics
     </button>
+
+    <div class="container2">
+      <div class="data-field">
+        <label>Toggle LED:</label>
+      </div>
+      <div class="led_status">
+        <span id="led_stat" style="margin-right: 2rem;">The LED is OFF</span>
+        <button id="led_btn" class="styled-button1 turn_on">
+          ON
+        </button>
+      </div>
+      
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
+
 </html>
